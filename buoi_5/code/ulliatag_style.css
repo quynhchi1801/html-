@@ -1,0 +1,23 @@
+h1 {
+    color:aliceblue;
+    background-color: red;
+    font-size: 40px;
+    text-align: center;
+}
+h2 {
+    color:black;
+    background-color: yellow;
+    font-size: 30px;
+}
+p {
+    color:deepskyblue;
+    font-size: 20px;
+}
+li {
+    color:mediumspringgreen;
+    font-size: 20px;
+}
+a {
+    color:mediumspringgreen;
+    font-size: 20px;
+}
