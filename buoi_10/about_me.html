@@ -7,61 +7,112 @@
 
     <link rel="stylesheet" href="ulliatag_style.css">
     <style>
+        * {
+            padding:0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color:#FFFDD0;
+        }
+        body h1 {
+            color: #FF4500;
+            margin:auto;
+            text-align: center;
+            margin: 0px 0px 35px 0px;
+            font-size:50px;
+        }
         #navigationbar {
             /* list-style-type dùng để điều chỉnh kiểu của danh sách */
             list-style-type: none;
             margin: 0;
             padding: 0;
             overflow: hidden;
-            background-color:lightskyblue;
+            background-color:#FFA500;
         }
-        li {
+        body #navigationbar li {
             float: left
         }
-        li a {
+        body #navigationbar li a {
             display: block;
-            background-color: lightskyblue;
+            background-color:#FFA500;
             padding: 8px 16px;
             color:black;
             text-decoration: none;
         }
-        li a:hover {
+        body #navigationbar li a:hover {
             background-color: black;
             color:aliceblue
         }
+        body > #content {
+            border: 3px double rgb(246, 178, 20);
+            margin: 35px 0px 0px 0px;
+            padding: 35px 0px 0px 0px;
+        }
+        body #content #bio-text {
+            color:blue;
+            margin: 0px 0px 20px 0px
+        }
+        body #content h2 {
+            margin: 20px 0px 20px 0px
+        }
+        body #content ul {
+            list-style-type: none;
+            padding: 0px 30px 0px 30px;
+        }
+        body #content h2 {
+            color:blue;
+            font-size: 35px;
+            margin: 10px 0px;
+            padding: 0px 12px;
+        }
+        body #content #footer {
+            background-color: 	#FFA500;
+        }
+        body #content img {
+            width: 350px ;
+            height: 350px;
+            padding: 0px 12px;
+        }
+        body p {
+            margin: 20px 0px;
+            padding: 0px 12px;
+        }
+        
     </style>
 </head>
 <body>
     <h1>About Me</h1>
     <ul id="navigationbar">
-        <li><a href = "#Bio">Bio</a></li>
-        <li><a href = "#Hobbies">Hobbies</a></li>
-        <li><a href = "#Contact">Contact</a></li>
+        <li><a href = "#bio-text">Bio</a></li>
+        <li><a href = "#hobbies-text">Hobbies</a></li>
+        <li><a href = "#contact-text">Contact</a></li>
     </ul>
-    <br>
-    <br>
-    <h2 id = "Bio">Tiểu sử</h2>
-    <p><strong>Xin chào</strong></p>
-    <p><em>Tôi tên là Nguyễn Văn A, 12 tuổi</em></p>
-    <p><u>Tôi đang sống tại ABC và học tại trường XYZ</u></p>
-    <p>Đây là ảnh của tôi</p>
-    <img src = "https://bizweb.dktcdn.net/100/303/962/files/87126502-2509242206005371-2073523065622364160-n-f697e400-e8b2-4bb1-9698-d00b50b2d9c3.jpg?v=1627804121650"
-    alt = " " width = 350 height = 350>
-    <br>
-    <br>
-    <h2 id = "Hobbies">Sở thích</h2>
-    <ul>
-        <li>Bóng đá</li>
-        <li>Cờ vua</li>
-        <li>Chơi game</li>
-    </ul>
-    <br>
-    <br>
-    <h2 id = "Contact">Liên hệ</h2>
-    <ul>
-        <li><strong>Số điện thoại:</strong>0123456789</li>
-        <li><strong>Email:</strong>nguyenvana@gmail.com</li>
-        <li><a href = "https://www.facebook.com/?locale=vi_VN">Facebook</a></li>
-    </ul>
+    <div id="content">
+        <h2 id = "bio-text">Tiểu sử</h2>
+        <p><strong>Xin chào</strong></p>
+        <p><em>Tôi tên là Nguyễn Văn A, 12 tuổi</em></p>
+        <p><u>Tôi đang sống tại ABC và học tại trường XYZ</u></p>
+        <p>Đây là ảnh của tôi</p>
+        <img src = "https://bizweb.dktcdn.net/100/303/962/files/87126502-2509242206005371-2073523065622364160-n-f697e400-e8b2-4bb1-9698-d00b50b2d9c3.jpg?v=1627804121650">
+        <br>
+        <br>
+        <h2 id = "hobbies-text">Sở thích</h2>
+        <ul>
+            <li>Bóng đá</li>
+            <li>Cờ vua</li>
+            <li>Chơi game</li>
+        </ul>
+        <br>
+        <br>
+        <div id="footer">
+            <h2 id = "contact-text">Liên hệ</h2>
+            <ul>
+                <li><strong>Số điện thoại:</strong>0123456789</li>
+                <li><strong>Email:</strong>nguyenvana@gmail.com</li>
+                <li><a href = "https://www.facebook.com/?locale=vi_VN">Facebook</a></li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
