@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: rgba(34, 62, 91, 0.2);
+            width: 100vw;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            padding: 23px;
+        }
+        #main {
+            background-color: white;
+            width: 514px;
+            height: 518px;
+            border: 1px solid white;
+            border-radius: 5px;
+            padding: 23px;
+        }
+        #introduction {
+            font-size: 21px;
+            text-align: center;
+            font-family: Muli, "Open Sans", sans-serif;
+            display:block;
+        }
+        .login {
+            color: white;
+            padding: 0px 5px;
+            border-width: 1px;
+            border-color: black;
+            width: 133px;
+            height: 46px;
+            border-radius: 5px;
+            font-family:  Muli, "Open Sans", sans-serif;
+            font-size: 18px;
+            margin: 36px 9.5px 10px 9.5px;
+        }
+        .login a {
+            color: white;
+            text-decoration: none;
+        }
+        #microsoft {
+            background-color: rgb(66, 129, 220);
+        }
+        #google {
+            background-color: #D82525;
+        }
+        #github {
+            background-color: #464646;
+        }
+        #addition {
+            color: #898989;
+            font-size:16px;
+            font-family: Muli, "Open Sans", sans-serif;
+            text-align: center;
+            display:block;
+            margin: 18px 0px 0px 0px;
+        }
+        .textinput {
+            display: block;
+            width: 467px;
+            padding: 1px 16px;
+            height: 48px;
+            border-width: 1px;
+            border-color: rgb(206, 212, 218);
+            border-style: solid;
+            border-radius: 5px;
+            font-size: 18px;
+            margin: 23px 0px;
+        }
+        #submit {
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 5px;
+            background-color: #506CF0;
+            width: 467px;
+            height: 48px;
+            color: white;
+            font-family: Muli, "Open Sans", sans-serif;
+            font-size: 18px;
+            padding: 0px 25px;
+        }
+        #forgetpassword {
+            font-size: 16px;
+            font-family:Muli, "Open Sans", sans-serif ;
+            width: 111px;
+            height: 20px;
+            /* display: block; */
+            margin: 20px 0px ;
+            text-align: right;
+            color: rgb(66, 129, 220);
+        }
+        #conclusion {
+            font-size: 14px;
+            font-family: Muli, "Open Sans", sans-serif;
+        }
+        hr {
+            color: #182537;
+            margin: 32px 0px 10px 0px ;
+        }
+        span {
+            color: #337AB7;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Phần mở đầu trang -->
+    </header>
+
+    <body>
+        <!-- Phần thân trang -->
+         <form action="">
+            <div id="main">
+                <label id="introduction">Đăng nhập bằng tài khoản</label>
+                <button class="login " id="microsoft"><a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=70b85507-07f5-4bbb-8614-6edeec2c355f&scope=User.Read%20openid%20profile%20offline_access&redirect_uri=https%3A%2F%2Fcodelearn.io%2Foauth%2Fms&client-request-id=01915f61-8585-76a2-a773-ccd26b48f4cd&response_mode=fragment&response_type=code&x-client-SKU=msal.js.browser&x-client-VER=3.11.1&client_info=1&code_challenge=6UkIg43nlrp_QZAy8yWHxkB5c2CZ4i2ky7jijvidbN8&code_challenge_method=S256&nonce=01915f61-85a9-7efb-8853-8959b83b58c1&state=eyJpZCI6IjAxOTE1ZjYxLTg1OTQtN2ViMC04NGQ2LTZkMzk0MzZiZGE5NSIsIm1ldGEiOnsiaW50ZXJhY3Rpb25UeXBlIjoicG9wdXAifX0%3D">Microsoft</a></button>
+                <button class="login " id="google"><a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F&ifkv=Ab5oB3prDaDvoPU0EbUQUxR0hu9LaVqTx2IjdyDpYGz1znvKs4SICdX4EDI2tDqYYLi9pReYY0EfUQ&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S1344304158%3A1723884058885833&ddm=0">Google</a></button>
+                <button class="login " id="github"><a href="https://github.com/login">Github</a></button>
+                <label id="addition">HOẶC</label>
+                <input type="text" class="textinput" id="acount_name" placeholder="Tên tài khoản">
+                <input type="password" class="textinput" id="password" placeholder="Mật khẩu">
+                <button id="submit">Đăng nhập</button>
+                <p id="forgetpassword">Quên mật khẩu</p>
+                <hr>
+                <p id="conclusion">Trang này được bảo vệ bởi reCAPTCHA và áp dụng <a href="https://codelearn.io/terms"><span>Điều khoản sử dụng</span></a></p>
+                
+            </div>
+         </form>
+    </body>
+
+    <footer>
+        <!-- Phần chân trang -->
+    </footer>
+</body>
+</html>

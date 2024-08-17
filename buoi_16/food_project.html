@@ -17,9 +17,14 @@
             float: left;
         }
         body #navigationbar li a {
+            width: 90px;
+            height: 39px;
             text-decoration: none;
             margin: 0px 25px;
-            display:block;
+            display:inline-block;
+            text-align: center;
+            vertical-align: middle;
+            line-height:normal;
         }
         body #navigationbar li a:hover {
             background-color: darkgrey;
@@ -31,9 +36,11 @@
     <div>
         <ul id="navigationbar">
             <li style="margin: 0px 150px 0px 25px"><a href="">Gourmet au Catering</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Menu</a></li>
-            <li><a href="">Contact</a></li>
+            <div id="Menu">
+                <li><a href="">About</a></li>
+                <li><a href="">Menu</a></li>
+                <li><a href="">Contact</a></li>
+            </div>
         </ul>
     </div>
 </body>
