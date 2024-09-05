@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color:aquamarine;
+            width: 100vw;
+            height: 100vh;
+            align-items: center;
+            justify-content: right;
+            display: flex;
+            overflow: hidden;
+        }
+        #login {
+            width: 470px;
+            height: 610px;
+            background-color: white;
+            margin: 0px 30px;
+            padding: 35px 25px;
+            border: 0px solid gray;
+            border-radius: 10px;
+        }
+        #frame {
+            width: 437px;
+            height: 578px;
+        }
+        #starter {
+            font-size: 20px;
+            display: block;
+            font-family: Muli, "Open Sans", sans-serif;
+            width: 420px 30px;
+            margin: 0px 0px 30px 0px;
+        }
+        .inputinfor {
+            width: 420px;
+            height: 56px;
+            padding: 1px 19px;
+            border: 1px solid gray;
+            border-radius: 5px;
+            margin: 0px 0px 30px 0px;
+        }
+        ::placeholder {
+            font-size: 18px;
+            color:rgba(94, 79, 78, 0.5);
+        }
+        #checkbox1 {
+            align-items: center;
+            justify-content:space-around;
+            display: flex;
+            width:420px;
+            height:20px;
+            margin: 0px 0px 30px 0px;
+        }
+        #checkboxelement {
+            width: 23px;
+            height: 23px;
+            align-items: start;
+            justify-content:start;
+            display: flex;
+        }
+        #labelcheckbox {
+            padding: 0px 0px 0px 14px;
+            font-size: 16px;
+            font-family: Muli, "Open Sans", sans-serif;
+            width: 420px;
+            height:43px;
+            color: #182537;
+        }
+        #registerbutton {
+            width: 420px;
+            height: 56px;
+            padding: 0px 30px;
+            border: 0px solid gray;
+            border-radius: 5px;
+            background-color: #2C13CF;
+            margin: 0px 0px 30px 0px;
+        }
+        #register {
+            width:360px; 
+            height: 55px;
+            align-items: center;
+            justify-content:center;
+            display: flex;
+            color: white;
+            font-size: 23px;
+            font-family: Muli, "Open Sans", sans-serif;
+        }
+        #anotheracount {
+            width: 239px; 
+            height: 27px;
+            color: #182537;
+            font-size: 18px;
+            font-family: Muli, "Open Sans", sans-serif ;
+            margin: 0px 91px;
+        }
+        #loginmethod {
+            width: 420px;
+            height: 75px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0px 0px;
+        }
+        #frame1 {
+            width: 201px;
+            height: 55px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0px 0px 0px;
+        }
+        .dot {
+            height: 55px;
+            width: 55px;
+            background-color: white;
+            border-radius: 50%;
+            display: inline-block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #circle1 {
+            border: 1px solid #1E90FF;
+            margin: 0px 5px;
+        }
+        #circle2 {
+            border: 1px solid red;
+            margin: 0px 5px;
+        }
+        #circle3 {
+            border: 1px solid black;
+            margin: 0px 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Phần mở đầu -->
+    </header>
+
+    <body>
+        <!-- Phần thân trang -->
+        <form action="">
+            <div id="login">
+                <div id="frame">
+                    <label id="starter"><strong>Bắt Đầu Ngay</strong></label>
+                    <input type="text" for="acount_name" id="acount" class="inputinfor" placeholder="Tên tài khoản">
+                    <input type="email" for="email" id="email" class="inputinfor" placeholder="Email">
+                    <input type="password" for="password" id="password" class="inputinfor" placeholder="Mật khẩu">
+                    <div id="checkbox1">
+                        <input type="checkbox" id="checkboxelement"></input>
+                        <label id="labelcheckbox"> Tôi đồng ý chia sẻ thông tin và đồng ý với <a href="https://codelearn.io/terms">Chính sách bảo mật dữ liệu cá nhân</a></label>
+                    </div>
+                    <button id="registerbutton"><div id="register"><strong>Đăng ký</strong></div></button>
+                    <div id="anotheracount">
+                        <label>hoặc sử dụng tài khoản khác</label>
+                    </div>
+                    <div id="loginmethod">
+                        <div id="frame1">
+                            <span class="dot" id="circle1"><a href="https://login.microsoftonline.com/"><img src="https://codelearn.io/images/windows.svg" width="28"  height= "28" id="microsoft"></a></span>
+                            <span class="dot" id="circle2"><a href="https://accounts.google.com/"><img src="https://codelearn.io/images/google.svg" width="28" height="28" id="google"></a></span>
+                            <span class="dot" id="circle3"><a href="https://github.com/login"><img src="https://codelearn.io/images/github.svg" width="28" height="28" id="github"></a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </body>
+
+    <footer>
+        <!-- Phần chân trang -->
+    </footer>
+</body>
+</html>

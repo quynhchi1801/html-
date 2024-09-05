@@ -6,42 +6,49 @@
     <title>Document</title>
 
     <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing:border-box;
+        }
+        body {
+            background-color: white;
+        }
         #navigationbar {
             list-style-type: none;
-            background-color: white;
-            margin:0;
-            padding:0;
-            
-        }
-        body #navigationbar li {
-            float: left;
-        }
-        body #navigationbar li a {
-            width: 90px;
-            height: 39px;
+            border: 1px solid black;
+            margin: 0px;
+            padding: 0px;
             text-decoration: none;
-            margin: 0px 25px;
-            display:inline-block;
-            text-align: center;
-            vertical-align: middle;
-            line-height:normal;
+            width: 1269px;
+            height: 55px;
+            font-size: 15px;
+            font-family: "Times New Roman", Georgia , serif;
+            padding: 8px 16px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
         }
-        body #navigationbar li a:hover {
-            background-color: darkgrey;
+        #button1 {
+            border: 0px solid gray;
+            padding: 8px 16px;
+            float: left;
+            width: auto;
+            border: none;
+            display: block;
+            outline: 0;
         }
-
     </style>
 </head>
 <body>
-    <div>
-        <ul id="navigationbar">
-            <li style="margin: 0px 150px 0px 25px"><a href="">Gourmet au Catering</a></li>
-            <div id="Menu">
-                <li><a href="">About</a></li>
-                <li><a href="">Menu</a></li>
-                <li><a href="">Contact</a></li>
-            </div>
+    <div id="navigationbar">
+        <ul>
+            <li id="button1">Gourmet au Catering</li>
+            <li id="button2">About</li>
+            <li id="button3">Menu</li>
+            <li id="button4">Contact</li>
         </ul>
     </div>
+
 </body>
 </html>

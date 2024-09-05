@@ -92,19 +92,37 @@
             font-size: 18px;
             padding: 0px 25px;
         }
+        #content-forgetpassword {
+            display: block;
+            width: 100%;
+            height: 20px;
+            align-items: end;
+            justify-content: right;
+            margin: 20px 0px ;
+        }
         #forgetpassword {
             font-size: 16px;
             font-family:Muli, "Open Sans", sans-serif ;
-            width: 111px;
-            height: 20px;
             /* display: block; */
-            margin: 20px 0px ;
             text-align: right;
             color: rgb(66, 129, 220);
+        }
+        #box-conclusion {
+            width: 100%;
+            display:block;
+            align-items: flex-end;
+            justify-content: right;
+            border-bottom-color: rgba(0,0,0,0);
+            border-left-color: rgba(0,0,0,0);
+            border-right-color: rgba(0,0,0,0);
+            border-top-width: 1px;
+            border-top-color: black;
+            border-style: solid;
         }
         #conclusion {
             font-size: 14px;
             font-family: Muli, "Open Sans", sans-serif;
+            padding:20px 0px;
         }
         hr {
             color: #182537;
@@ -135,10 +153,12 @@
                 <input type="text" class="textinput" id="acount_name" placeholder="Tên tài khoản">
                 <input type="password" class="textinput" id="password" placeholder="Mật khẩu">
                 <button id="submit">Đăng nhập</button>
-                <p id="forgetpassword">Quên mật khẩu</p>
-                <hr>
-                <p id="conclusion">Trang này được bảo vệ bởi reCAPTCHA và áp dụng <a href="https://codelearn.io/terms"><span>Điều khoản sử dụng</span></a></p>
-                
+                <div id="content-forgetpassword">
+                    <p id="forgetpassword">Quên mật khẩu</p>
+                </div>
+                <div id="box-conclusion">
+                    <p id="conclusion">Trang này được bảo vệ bởi reCAPTCHA và áp dụng <a href="https://codelearn.io/terms"><span>Điều khoản sử dụng</span></a></p>
+                </div>
             </div>
          </form>
     </body>
