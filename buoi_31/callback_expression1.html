@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        "use strict";
+        let isVietnamese = confirm("Bạn có phải người Việt Nam không?");
+
+        if (isVietnamese) {
+            function welcome() {
+                console.log("Chào bạn!");
+            }
+        } else {
+            function welcome() {
+                console.log("Hello!");
+            }
+        }
+
+        welcome(); 
+    </script>
+</body>
+</html>

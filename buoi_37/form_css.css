@@ -1,0 +1,42 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html {
+    font-family: Arial, sans-serif;
+}
+html body {
+    width:1000px;
+    height:1000px;
+    padding:100px;
+    position:relative;
+
+}
+html body #tittle{
+    margin: auto;
+    height: 15%;
+    font-weight:100;
+}
+html body #tittle h2{
+    text-align: center;
+}
+html body #form {
+    position:absolute;
+    display:flex;
+    width:80%;
+    margin: 30px 100px;
+    background-color: aquamarine;
+}
+html body #form #infor {
+    display:block;
+    width:538px;
+    height:607px;
+    background-color: pink;
+}
+html body #form #contact {
+    display:block;
+    width: 380px;
+    height: 644px;
+    background-color: blue;
+}

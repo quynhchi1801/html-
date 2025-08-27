@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+            background: #f1f1f1;
+            padding: 20px;
+        }
+        #taskList {
+            background:white;
+            padding:15px;
+            border-radius:8px;
+            box-shadow:0 2px 5px rgba(0,0,0,0.1)
+        }
+        .task {
+            padding:10px;
+            border-bottom: 1px solid #ccc;
+        }
+        .task:last-child {
+            border-bottom:none;
+        }
+    </style>
+</head>
+<body>
+    <h2>Danh sách công việc</h2>
+    <div id="taskList"></div>
+    <script>
+        const tasks = [
+            { id: 1, tittle: "Học về DOM", done:false},
+            {id: 1, tittle: "Viết chương trình demo", done:true},
+            {id: 1, tittle: "Kiểm tra lại kết quả", done:false}
+        ];
+
+        const taskList = document.getElementById("taskList");
+
+        tasks.forEach(task => {
+            const taskDiv = document.createElement("div");
+            taskDiv.className = "task";
+            taskDiv.innerHTML = `
+                <input type="checkbox" ${task.done ? "checked" : ""}>
+                <span style="text-decoration: ${task.done ? 'line-through' : 'none'}>
+                ${task.title}
+                </span>
+             `;
+                taskList.appendChild(taskDiv)
+        })
+    </script>
+</body>
+</html>

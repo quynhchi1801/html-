@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = 5;
+        let b = 10;
+        function UCLN(a,b){
+            // Trong khi nếu b khác 0
+            while (b !== 0){
+                // Khai báo temp là b
+                let temp = b;
+                // b bằng a chia b lấy dư
+                b = a % b;
+                // a bằng temp
+                a = temp;
+            }
+            return a
+        }
+        console.log(UCLN(a,b))
+    </script>
+</body>
+</html>

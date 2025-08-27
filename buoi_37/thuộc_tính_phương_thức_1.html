@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="tieuDe">Chào bạn!</h1>
+    <p id="doanVan">Đây là đoạn văn bản ban đầu</p>
+    <button onclick="thayDoiNoiDung()">Bấm để thay đổi</button>
+
+    <script>
+        function thayDoiNoiDung() {
+            // Truy cập phần tử bằng ID
+            let tieuDe = document.getElementById("tieuDe")
+            let doanVan = document.getElementById("doanVan")
+
+            // Thay đổi nội dung
+            tieuDe.innerHTML = "Good morning"
+            doanVan.innerHTML = "Welcome to our website!"
+
+            // Thay đổi màu chữ
+            tieuDe.style.color = "lightpink"
+            doanVan.style.color = "lightgreen"
+            }
+    </script>
+</body>
+</html>

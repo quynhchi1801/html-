@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="menu">
+        <li>Trang chủ</li>
+        <li>Sản phẩm</li>
+        <li>Liên hệ</li>
+    </ul>
+
+    <script>
+        const menu = document.getElementById("menu");
+        const firstItem = menu.firstElementChild;
+
+        console.log(firstItem.textContent);
+        console.log(firstItem.nextElementSibling.textContent);
+        console.log(firstItem.parentNode.id);
+    </script>
+</body>
+</html>

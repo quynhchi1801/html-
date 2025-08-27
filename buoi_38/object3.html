@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const chu_nhat = {
+            chieu_dai:10,
+            chieu_rong:5,
+            chu_vi: function(){
+                return (this.chieu_dai + this.chieu_rong)*2
+            },
+            dien_tich: function(){
+                return this.chieu_dai * this.chieu_rong
+            }
+        }
+
+        console.log(chu_nhat)
+        console.log(chu_nhat.chu_vi())
+        console.log(chu_nhat.dien_tich())
+    </script>
+</body>
+</html>

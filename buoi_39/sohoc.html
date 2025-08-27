@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const SoHoc = {
+            number1: 5,
+            number2: 6,
+            get_number1: function(){
+                return this.number1
+            },
+            get_number2: function(){
+                return this.number2
+            },
+            addition: function(){
+                return (this.number1 + this.number2)
+            },
+            suctract: function(){
+                return (this.number1 - this.number2)
+            },
+            multi: function(){
+                return (this.number1 * this.number2)
+            },
+            division: function(){
+                return (this.number1 / this.number2)
+            }
+        }
+
+        console.log(SoHoc)
+        console.log(SoHoc.get_number1())
+        console.log(SoHoc.get_number2())
+        console.log(SoHoc.addition())
+        console.log(SoHoc.suctract())
+        console.log(SoHoc.multi())
+        console.log(SoHoc.division())
+    </script>
+</body>
+</html>

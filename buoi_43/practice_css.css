@@ -1,0 +1,144 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+    width:1000px;
+    height:700px;
+    background-color: yellow;
+    font-family: "Nunito sans-serif";
+}
+body #header {
+    position:absolute;
+    background-color: white;
+    width:100%;
+    height:11%;
+    display:flex;
+}
+body #header #logo {
+    height:86px;
+    width:350px;
+    position:absolute;
+    top:10px;
+    left:230px;
+    text-decoration: none;
+}
+body #header #logo #bear {
+    width:86px;
+    height:56px;
+}
+body #header #logo span {
+    position:absolute;
+    top:17px;
+    font-size:27px;
+    margin:0px 0px 0px 9px;
+    font-weight: 500;
+    color:#02C4C1;
+}
+body #header input {
+    height:34px;
+    width:400px;
+    position:absolute;
+    top:20px;
+    left:620px;
+    padding:10px;
+    border:solid 1px #FB98B6;
+}
+body #header #search {
+    width:25px;
+    height:25px;
+    position:absolute;
+    top:25px;
+    left:990px;
+}
+body #header #telephone {
+    width:250px;
+    height:56px;
+    position:absolute;
+    top: 18px;
+    left:1070px;
+    text-decoration: none;
+}
+body #header #telephone #phone {
+    width:56px;
+    height:56px;
+    position:absolute;
+    top:-5px;
+}
+body #header #telephone span {
+    color:#FB98B6;
+    font-size:27px;
+    position:absolute;
+    top:7px;
+    left: 70px;
+    font-weight:500;
+}
+body #nav {
+    position:absolute;
+    background-color:#FEB0BD;
+    width:100%;
+    height:11%;
+    top:11%;
+    color:white;
+    font-size:17px;
+}
+body #nav ul{
+    list-style-type: none;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items:center;
+    padding:0px 157px;
+    position:absolute;
+    height:100%;
+}
+body #nav ul li {
+    width:74px;
+    height:50px;
+}
+body #nav ul #li1 {
+    width:70px;
+    margin: 0px 20px;
+}
+body #nav ul #li2 {
+    width:149px;
+    margin: 0px 20px;
+}
+body #nav ul #li3 {
+    width:100px;
+    margin: 0px 20px;
+}
+body #nav ul #li4 {
+    width:100px;
+    margin: 0px 20px;
+}
+body #nav ul #li5 {
+    width:100px;
+    margin: 0px 20px;
+}
+body #nav ul #li6 {
+    width:152px;
+    margin: 0px 20px;
+}
+body #nav ul #li7 {
+    width:130px;
+    margin: 0px 20px;
+}
+body #nav ul #li8 {
+    width:100px;
+    margin: 0px 20px;
+}
+
+body #banner {
+    position:absolute;
+    top:22%;
+    width:100%;
+    height:80%;
+    background-color: aqua;
+}
+body #banner img {
+    position:absolute;
+    width:100%;
+    height:112%;
+}

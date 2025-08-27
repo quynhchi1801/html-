@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let a = [2, 3, 4, 6, 13, 16, 18];
+        // let result = a.filter(function (numbers){
+        //     return numbers % 2 == 0;
+        // })
+        // console.log(result)
+
+        let a = [3, 15, 6, 7, 30, 41];
+        let result = a.filter(function (numbers) {
+            return ((numbers % 3 == 0) && (numbers % 5 == 0));
+        })
+        console.log(result)
+    </script>
+</body>
+</html>

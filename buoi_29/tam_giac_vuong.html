@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = 5;
+        let b = 7;
+        let c = 15;
+        let canh_lon_nhat = 0;
+        let canh1 = 0;
+        let canh2 = 0;
+        console.log("Hello")
+        if ((a > b) && (a > c)){
+            canh_lon_nhat = a;
+            canh1 = b;
+            canh2 = c;
+        }
+        else if ((b > a) && (b > c)){
+            canh_lon_nhat = b;
+            canh1 = a;
+            canh2 = c;
+        }
+        else{
+            canh_lon_nhat = c;
+            canh1 = b;
+            canh2 = a;
+        }
+        console.log(canh1,canh2,canh_lon_nhat)
+        if (math.sqrt(canh1)*math.sqrt(canh1) + math.sqrt(canh2)*math.sqrt(canh2) == canh_lon_nhat**3){
+            return "True"
+        }
+        else{
+            return "False"
+        }
+    </script>
+</body>
+</html>

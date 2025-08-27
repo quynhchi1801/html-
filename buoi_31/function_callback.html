@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function ask(question, handleYes, handleNo){
+            const answer = confirm(question);
+            if (answer){
+                handleYes();
+            }
+            else{
+                handleNo();
+            }
+        }
+        function handleYes(){
+            console.log("Bạn đã chọn Yes!")
+        }
+        function handleNo(){
+            console.log("Bạn đã chọn No")
+        }
+        ask("Bạn muốn tiếp tục thực hiện chương trình không?", handleYes, handleNo)
+    </script>
+</body>
+</html>
